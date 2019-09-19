@@ -30,13 +30,7 @@ public class ApplicationService {
     }
 
     public void createRowParityDisk() {
-        //CREATE ROW PARITY DISK
         RowParityDisk rpd = new RowParityDisk(disks);
-        for (int i =0; i < Disk.NUMBEROFFIELDS; i++) {
-            System.out.printf("%d %n", rpd.rowValues.get(i));
-        }
-        System.out.println("Size of array " + disks.size());
         disks.add(rpd);
-        System.out.println("Size of array " + disks.size());
     }
 }

@@ -7,7 +7,7 @@ import java.util.Map;
 public class RowParityDisk extends Disk{
 
 //    Map<Integer, Integer> rowValues;
-     public  RowParityDisk(List<Disk> disks ){
+     public  RowParityDisk(List<Disk> disks){
 
          super.rowValues = new HashMap<>();
          buildValuesInRpd(disks);
